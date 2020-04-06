@@ -1,7 +1,7 @@
 // Copyright 2020 Brazhnikov Eugene
 
 #include <gtest/gtest.h>
-#include "include/Converter.h"
+#include "include/Money_Converter.h"
 
 TEST(test_brazhnikov_eugene_money_converter, Can_Create) {
     ASSERT_NO_THROW(MoneyConverter a);
