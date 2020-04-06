@@ -3,11 +3,11 @@
 #include <gtest/gtest.h>
 #include "include/Converter.h"
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Create){
+TEST(test_brazhnikov_eugene_money_converter, Can_Create) {
     ASSERT_NO_THROW(MoneyConverter a);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Convert_RUB_to_USD){
+TEST(test_brazhnikov_eugene_money_converter, Can_Convert_RUB_to_USD) {
     MoneyConverter converter;
     double input = 1;
     double output;
@@ -17,7 +17,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_Convert_RUB_to_USD){
     ASSERT_NEAR(0.012, output, 0.1);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_USD_with_negative){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_USD_with_negative) {
     MoneyConverter converter;
     double input = -12.0;
     double output;
@@ -27,7 +27,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_USD_with_negative){
     ASSERT_DOUBLE_EQ(-1, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Can_USD_to_RUB){
+TEST(test_brazhnikov_eugene_money_converter, Can_USD_to_RUB) {
     MoneyConverter converter;
     double input = 1.0;
     double output;
@@ -37,7 +37,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_USD_to_RUB){
     ASSERT_NEAR(77.730, output, 0.50);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_USD_equal_zero){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_USD_equal_zero) {
     MoneyConverter converter;
     double input = 0.0;
     double output;
@@ -47,7 +47,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_USD_equal_zero){
     ASSERT_DOUBLE_EQ(0.0, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_USD_with_int){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_USD_with_int) {
     MoneyConverter converter;
     double input = 10;
     double output;
@@ -59,7 +59,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_USD_with_int){
 
 // ===================================
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Convert_Rub_to_Eur){
+TEST(test_brazhnikov_eugene_money_converter, Can_Convert_Rub_to_Eur) {
     MoneyConverter converter;
     double input = 85.73;
     double output;
@@ -69,7 +69,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_Convert_Rub_to_Eur){
     ASSERT_DOUBLE_EQ(1, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Convert_EUR_to_RUB){
+TEST(test_brazhnikov_eugene_money_converter, Can_Convert_EUR_to_RUB) {
     MoneyConverter converter;
     double input = 1;
     double output;
@@ -79,7 +79,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_Convert_EUR_to_RUB){
     ASSERT_DOUBLE_EQ(85.73, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_EUR_equal_zero){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_EUR_equal_zero) {
     MoneyConverter converter;
     double input = 0.0;
     double output;
@@ -89,7 +89,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_EUR_equal_zero){
     ASSERT_DOUBLE_EQ(0.0, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_EUR_with_negative){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_EUR_with_negative) {
     MoneyConverter converter;
     double input = -12.0;
     double output;
@@ -99,7 +99,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_EUR_with_negative){
     ASSERT_DOUBLE_EQ(-1, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_EUR_with_int){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_EUR_with_int) {
     MoneyConverter converter;
     double input = 10;
     double output;
@@ -111,7 +111,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_EUR_with_int){
 
 // ============================
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Convert_Rub_to_JPY){
+TEST(test_brazhnikov_eugene_money_converter, Can_Convert_Rub_to_JPY) {
     MoneyConverter converter;
     double input = 71.40;
     double output;
@@ -121,7 +121,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_Convert_Rub_to_JPY){
     ASSERT_DOUBLE_EQ(1, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Convert_JPY_to_RUB){
+TEST(test_brazhnikov_eugene_money_converter, Can_Convert_JPY_to_RUB) {
     MoneyConverter converter;
     double input = 1;
     double output;
@@ -131,7 +131,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_Convert_JPY_to_RUB){
     ASSERT_DOUBLE_EQ(71.40, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_JPY_equal_zero){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_JPY_equal_zero) {
     MoneyConverter converter;
     double input = 0.0;
     double output;
@@ -141,7 +141,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_JPY_equal_zero){
     ASSERT_DOUBLE_EQ(0.0, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_JPY_with_negative){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_JPY_with_negative) {
     MoneyConverter converter;
     double input = -12.0;
     double output;
@@ -151,7 +151,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_JPY_with_negative){
     ASSERT_DOUBLE_EQ(-1, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_JPY_with_int){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_JPY_with_int) {
     MoneyConverter converter;
     double input = 10;
     double output;
@@ -163,7 +163,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_JPY_with_int){
 
 // ===================================
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Convert_RUB_to_SEK){
+TEST(test_brazhnikov_eugene_money_converter, Can_Convert_RUB_to_SEK) {
     MoneyConverter converter;
     double input = 78;
     double output;
@@ -173,7 +173,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_Convert_RUB_to_SEK){
     ASSERT_DOUBLE_EQ(1, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Convert_SEK_to_RUB){
+TEST(test_brazhnikov_eugene_money_converter, Can_Convert_SEK_to_RUB) {
     MoneyConverter converter;
     double input = 1;
     double output;
@@ -183,7 +183,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_Convert_SEK_to_RUB){
     ASSERT_DOUBLE_EQ(78, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_SEK_equal_zero){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_SEK_equal_zero) {
     MoneyConverter converter;
     double input = 0.0;
     double output;
@@ -193,7 +193,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_SEK_equal_zero){
     ASSERT_DOUBLE_EQ(0.0, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_SEK_with_negative){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_SEK_with_negative) {
     MoneyConverter converter;
     double input = -12.0;
     double output;
@@ -203,7 +203,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_SEK_with_negative){
     ASSERT_DOUBLE_EQ(-1, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_SEK_with_int){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_SEK_with_int) {
     MoneyConverter converter;
     double input = 10;
     double output;
@@ -215,7 +215,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_SEK_with_int){
 
 // =================================
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Convert_RUB_to_UAH){
+TEST(test_brazhnikov_eugene_money_converter, Can_Convert_RUB_to_UAH) {
     MoneyConverter converter;
     double input = 1.0;
     double output;
@@ -225,7 +225,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_Convert_RUB_to_UAH){
     ASSERT_NEAR(0.36, output, 0.1);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Can_Convert_UAH_to_RUB){
+TEST(test_brazhnikov_eugene_money_converter, Can_Convert_UAH_to_RUB) {
     MoneyConverter converter;
     double input = 1;
     double output;
@@ -235,7 +235,7 @@ TEST(test_brazhnikov_eugene_money_converter, Can_Convert_UAH_to_RUB){
     ASSERT_NEAR(2.79, output, 0.3);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_UAH_with_zero){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_UAH_with_zero) {
     MoneyConverter converter;
     double input = 0.0;
     double output;
@@ -245,7 +245,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_UAH_with_zero){
     ASSERT_DOUBLE_EQ(0.0, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_UAH_with_negative){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_UAH_with_negative) {
     MoneyConverter converter;
     double input = -12.0;
     double output;
@@ -255,7 +255,7 @@ TEST(test_brazhnikov_eugene_money_converter, Rub_to_UAH_with_negative){
     ASSERT_DOUBLE_EQ(-1, output);
 }
 
-TEST(test_brazhnikov_eugene_money_converter, Rub_to_UAH_with_int){
+TEST(test_brazhnikov_eugene_money_converter, Rub_to_UAH_with_int) {
     MoneyConverter converter;
     double input = 10;
     double output;
