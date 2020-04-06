@@ -4,12 +4,11 @@
 #define MODULES_MONEY_CONVERTER_INCLUDE_CONVERTER_H_
 
 class MoneyConverter {
-
-public:
+public: 
     double rubdollar(const double& curr, int  WhichOne) {
-        if (curr >= 0 && WhichOne == 0) {  // RUB to EUR 
+        if (curr >= 0 && WhichOne == 0) {  // RUB to EUR
             return curr / 77.73;
-        } else if (curr >= 0 && WhichOne == 1) {  // EUR to RUB 
+        } else if (curr >= 0 && WhichOne == 1) {  // EUR to RUB
             return curr * 77.73;
         } else {
             return -1;
@@ -51,9 +50,9 @@ public:
             return curr / 2.79;
         } else if (curr >= 0 && WhichOne == 1) {
             return curr * 2.79;
-        } else { return -1; 
+        } else { return -1;
         }
     }
 };
 
-#endif
+#endif  // MODULES_MONEY_CONVERTER_INCLUDE_CONVERTER_H_"
