@@ -6,49 +6,53 @@
 class MoneyConverter {
 
 public:
-    double rubdollar(const double& curr, int  WhichOne){
-        if (curr >= 0 && WhichOne == 0){  //RUB to EUR 
+    double rubdollar(const double& curr, int  WhichOne) {
+        if (curr >= 0 && WhichOne == 0) {  // RUB to EUR 
             return curr / 77.73;
-        } else if (curr >= 0 && WhichOne == 1){  //EUR to RUB 
+        } else if (curr >= 0 && WhichOne == 1) {  // EUR to RUB 
             return curr * 77.73;
-        } else
+        } else {
             return -1;
+        }
     }
 
-    double rubeur(const double& curr, int WhichOne){
-        if (curr >= 0 && WhichOne == 0){
+    double rubeur(const double& curr, int WhichOne) {
+        if (curr >= 0 && WhichOne == 0) {
             return curr / 85.73;
         } else if (curr >= 0 && WhichOne == 1) {
             return curr * 85.73;
-        } else
+        } else {
             return -1;
+        }
     }
 
-    double rubJPY(const double& curr, int WhichOne){
-        if (curr >= 0 && WhichOne == 0){
+    double rubJPY(const double& curr, int WhichOne) {
+        if (curr >= 0 && WhichOne == 0) {
             return curr / 71.40;
-        } else if (curr >= 0 && WhichOne == 1){
+        } else if (curr >= 0 && WhichOne == 1) {
             return curr * 71.40;
-        } else
+        } else {
             return -1;
+        }
     }
 
-    double rubSEK(const double& curr, int WhichOne){
-        if (curr >= 0 && WhichOne == 0){
+    double rubSEK(const double& curr, int WhichOne) {
+        if (curr >= 0 && WhichOne == 0) {
             return curr / 78;
-        } else if (curr >= 0 && WhichOne == 1){
+        } else if (curr >= 0 && WhichOne == 1) {
             return curr * 78;
-        } else
+        } else {
             return -1;
+        }
     }
 
-    double rubUAH(const double& curr, int WhichOne){
-        if (curr >= 0 && WhichOne == 0){
+    double rubUAH(const double& curr, int WhichOne) {
+        if (curr >= 0 && WhichOne == 0) {
             return curr / 2.79;
-        } else if (curr >= 0 && WhichOne == 1){
+        } else if (curr >= 0 && WhichOne == 1) {
             return curr * 2.79;
-        } else
-            return -1;
+        } else { return -1; 
+        }
     }
 };
 
