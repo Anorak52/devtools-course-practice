@@ -4,7 +4,7 @@
 #define MODULES_MONEY_CONVERTER_INCLUDE_CONVERTER_H_
 
 class MoneyConverter {
-public: 
+ public:
     double rubdollar(const double& curr, int  WhichOne) {
         if (curr >= 0 && WhichOne == 0) {  // RUB to EUR
             return curr / 77.73;
